@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 40px;
+   
+}
+
+
+
+.bg-img {
+    width: 100%;
+align-content: center;
+   height:500px;
+    display: block;
+    margin-top: -140px;
+    z-index: 0;
+}
+
+
+button {
+    padding: 10px 16px;
+    margin: 6px;
+    cursor: pointer;
+}
+
+.hidden {
+
+    display: none;
+
+}
+
+h3{
+    color: #ffffff;
+     font-family: "Oxanium", sans-serif;
+    font-weight: 20px;
+    }
+
+#controlBox {
+    margin-top: -100px;
+position: relative;
+    padding: 20px;
+    border: 2px solid #ffffff;
+    display: inline-block;
+    border-radius: 10px;
+    z-index: 3;
+}
+
+.shapeBtn.selected {
+    background-color: black;
+    color: white;
+}
+
+#output {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+h1{
+    font-family: "Oxanium", sans-serif;
+    font-size: 190px;
+    margin-top: -22%;
+    color: rgb(255, 255, 255);
+z-index: 4;
+}
+
+
+
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+.shape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    margin: 10px;
+}
+
+/* Square */
+.square {
+    width: 60px;
+    height: 60px;
+
+}
+
+/* Circle */
+.circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    
+}
+
+/* Triangle */
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 60px solid;
+    position: relative;
+}
+
+.triangle span {
+    position: absolute;
+    top: 22px;
+    left: -8px;
+}
+
+.image{
+position:absolute;
+width : px;
+
+text-align: center;
+}
