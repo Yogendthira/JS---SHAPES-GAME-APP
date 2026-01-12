@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const output = document.getElementById("output");
 
     let selectedShape = "";
+    let globalCount = 0; // 🔥 CONTINUOUS COUNTER
 
     // -----------------------------
     // SHAPE BUTTON CLICK
@@ -33,6 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         for (let i = 1; i <= count; i++) {
+            globalCount++;
 
             // TRIANGLE
             if (selectedShape === "triangle") {
@@ -45,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 triangle.style.borderBottomColor = color;
 
                 const index = document.createElement("span");
-                index.innerText = i;
+                index.innerText = globalCount;
                 index.style.color = "white";
 
                 triangle.appendChild(index);
@@ -53,16 +55,18 @@ document.addEventListener("DOMContentLoaded", () => {
                 output.appendChild(wrapper);
 
             }
-            // SQUARE / CIRCLE
+            // CIRCLE / SQUARE
             else {
                 const shapeDiv = document.createElement("div");
                 shapeDiv.className = `shape ${selectedShape}`;
                 shapeDiv.style.backgroundColor = color;
-                shapeDiv.innerText = i;
+                shapeDiv.innerText = globalCount;
 
                 output.appendChild(shapeDiv);
             }
         }
+
+        countInput.value = "";
     });
 
 });
