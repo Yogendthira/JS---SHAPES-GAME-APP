@@ -57,12 +57,12 @@ position: relative;
     justify-content: center;
 }
 
-
+   
 h1{
     font-family: "Oxanium", sans-serif;
     font-size: 190px;
     margin-top: -22%;
-    color: rgb(255, 255, 255);
+    color: rgb(265, 255, 255);
 z-index: 4;
 }
 
@@ -86,7 +86,7 @@ body{
 .square {
     width: 60px;
     height: 60px;
-
+    outline: 3px solid aliceblue;
 }
 
 /* Circle */
@@ -94,6 +94,8 @@ body{
     width: 60px;
     height: 60px;
     border-radius: 50%;
+        outline: 3px solid aliceblue;
+
     
 }
 
@@ -105,6 +107,8 @@ body{
     border-right: 30px solid transparent;
     border-bottom: 60px solid;
     position: relative;
+           
+
 }
 
 .triangle span {
