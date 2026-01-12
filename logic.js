@@ -7,11 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const output = document.getElementById("output");
 
     let selectedShape = "";
-    let globalCount = 0; // 🔥 CONTINUOUS COUNTER
+    let globalCount = 0; 
 
-    // -----------------------------
-    // SHAPE BUTTON CLICK
-    // -----------------------------
+
     shapeButtons.forEach(btn => {
         btn.addEventListener("click", () => {
             shapeButtons.forEach(b => b.classList.remove("selected"));
@@ -20,9 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // -----------------------------
-    // ENTER BUTTON CLICK
-    // -----------------------------
+   
     enterBtn.addEventListener("click", () => {
 
         const count = parseInt(countInput.value);
@@ -55,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 output.appendChild(wrapper);
 
             }
-            // CIRCLE / SQUARE
+          
             else {
                 const shapeDiv = document.createElement("div");
                 shapeDiv.className = `shape ${selectedShape}`;
